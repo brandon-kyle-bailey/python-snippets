@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+
+
 # define function to be used as the decorator.
 def custom_decorator(func):
     """Decorator function to perform some logic before and after
