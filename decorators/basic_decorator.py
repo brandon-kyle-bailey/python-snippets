@@ -15,7 +15,7 @@ def custom_decorator(func):
     Returns:
         wrapper: (function) of wrapper function to execute.
     """
-    def wrapper(*args, **kwds):
+    def wrapper(*args, **kwargs):
         """Wrapper function is the function that wraps around
         the function to execute. It consumes any args and
         key word args and parses them back in to the function
@@ -29,7 +29,7 @@ def custom_decorator(func):
         print("Running pre inner function logic.")
 
         # execute the function with the consumed args and kwargs.
-        result = func(*args, **kwds)
+        result = func(*args, **kwargs)
 
         print("Running post inner function logic.")
 
