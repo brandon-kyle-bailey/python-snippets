@@ -1,5 +1,6 @@
 #/usr/bin/env python
 
+
 def query_some_data():
     return {"name":1, "name":2, "name":3}
 
@@ -29,13 +30,16 @@ def test():
     used_names = {val for name, val in results.iteritems()}
 
     for name in values_to_match:
+        
         if name in used_names:
             reply = raise_warning_dialog(QtGui)
 
             if reply == QtGui.QMessageBox.YesToAll:
                 break
+                
             elif reply == QtGui.QMessageBox.Yes:
                 continue
+                
             else:
                 raise ValueError("This is a value error")
 
