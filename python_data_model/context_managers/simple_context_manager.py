@@ -22,3 +22,29 @@ if __name__ == "__main__":
     
     print("This is after the context manager.")
     
+    
+#===================================================================================
+#===================================================================================
+
+from contextlib import contextmanager
+
+@contextmanager
+def myContextManager(data):
+    """Context manager which functions identically to the
+    one above. Except this has been created using contextlib.
+    Contextmanager in this scenario must be a generator (yield).
+    
+    Args:
+        data: input data to use during context.
+       
+    yields:
+        data
+    """
+    
+    yield data
+    
+if __name__ == "__main__":
+
+    with myContextManager("This is a context manager created using contextlib.") as example:
+        print("\033[93m" + example + "\033[0m")
+
