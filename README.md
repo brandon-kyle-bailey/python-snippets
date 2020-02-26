@@ -1,3 +1,3 @@
 # python-snippets
 
-Repository to store snippets of advanced features of Python that I experiment with.
+A sandbox repository to store snippets of advanced features of Python that I experiment with.
